@@ -12,15 +12,22 @@
   <body>
     <div id="pagewidth" >
       <div id="header">
-        <img src="/images/image003.gif" alt="NewsG8 logo" />
+        <img src="/images/image001.gif" alt="NewsG8 logo" />
+        <img src="/images/image002.gif" alt="NewsG8 logo2" id="logo2" />
       </div>
   
       <div id="wrapper" class="clearfix">
         <div id="full">
-          <form action="form_action.asp" method="get">
-            Login: <input type="text" name="fname" /><br />
-            Password: <input type="password" name="lname" /><br />
-            <input type="image" src="/images/image008.gif" alt="Submit" />
+          <form id="loginform" action="form_action.asp" method="post">
+            <div class="field">
+              <label for="username">Login:</label>
+              <input type="text" class="input" name="username" id="username" maxlength="30" />
+            </div>
+            <div class="field">
+              <label for="password">Password:</label>
+              <input type="password" class="input" name="password" id="password" maxlength="30" />
+            </div>
+            <input type="image" src="/images/image008.gif" alt="Submit" class="button" name="submit" value="submit" id="submit" />
           </form>     
         </div>
 	    </div>
