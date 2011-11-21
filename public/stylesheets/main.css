@@ -33,6 +33,7 @@ html, body {
      bottom: 0px;
      clear: both;
      display: block;
+     width: 280px;
      height: 38px;
      overflow: auto;
      position: absolute;
